@@ -3,3 +3,6 @@ echo "user edit autolock <username> no" | net rpc shell -U <admin_username> -S <
 
 # Interactive shell
 net rpc shell -U <admin_username> -S <domain_controller>
+
+# Get Domain status
+net ads info
