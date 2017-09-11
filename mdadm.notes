@@ -1,0 +1,27 @@
+# Create a new RAID array
+mdadm --create --verbose /dev/md0 --level=<raid_level> --raid-devices=<#_of_devs> /dev/sda /dev/sdb
+
+# Create configuration file after making RAID
+mdadm --detail --scan >> /etc/mdadm.conf
+
+# Re/Assemble array from configuration file
+mdadm --assemble --scan 
+
+# Remove a disk from the array
+mdadm --fail /dev/md0 /dev/sda
+mdadm --remove /dev/md0 /dev/sda
+# One command approach
+mdadm /dev/md0 --fail /dev/sda --remove /dev/sda
+
+# Adding a disk to the array
+mdadm --add /dev/md0 /dev/sdc
+
+# Check status of RAID
+cat /proc/mdstat
+mdadm --detail /dev/md0
+
+# Stop and delete RAID array
+mdadm --stop /dev/md0
+mdadm --remove /dev/md0
+
+

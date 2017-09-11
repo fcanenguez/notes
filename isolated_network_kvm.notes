@@ -1,0 +1,24 @@
+# Create a basic isolated network for KVM. Create an xml file with the following data structure.
+
+<network>
+   <name>isolated</name>
+   <ip address="192.168.1.1" netmask="255.255.255.0">
+      <dhcp>
+         <range start="192.168.1.2" end="192.168.1.254" />
+      </dhcp>
+   </ip>
+</network>
+
+# Virsh commands to initiate new network
+
+virsh net-define </path/to/net.xml>
+virsh net-autostart <network_name> ### If autostart is desired
+virsh net-start <network_name>
+
+# Additional data structures for added functionality
+
+<bridge name="virbr1" stp="on" delay="0" />
+<domain name="domain_name" />
+
+# DHCP reservations: Add under DHCP tag
+<host mac="<MAC_ADDR>" name="<SVR_NAME>" ip="<IP_ADDR>" />

@@ -1,0 +1,3 @@
+# Create macvtap0 network device for VM networking bridging
+
+ip link add link eth0 macvtap0 type macvlan mode bridge

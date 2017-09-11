@@ -1,0 +1,2 @@
+# Find NIC speed of interface
+cat /sys/class/net/<IFACE>/speed

@@ -1,0 +1,2 @@
+# Convert Epoch timestamps into human understandable timestamps
+<string> | perl -pe 's/(\d+)/localtime($1)/e'

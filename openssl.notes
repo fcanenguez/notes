@@ -1,0 +1,9 @@
+# Create a self signed SSL/TLS certificate
+openssl req -newkey rsa:<key_value> -nodes -keyout </path/to/private/key.pem> -x509 -days <#_days> -out </path/to/public/cert.pem>
+
+# Check the status of a SSL/TLS certificate on the server
+openssl x509 --enddate -noout -in </path/to/cert.pem>
+openssl x509 -text -noout -in </path/to/cert.pem>
+
+
+

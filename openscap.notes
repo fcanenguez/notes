@@ -1,0 +1,6 @@
+# Need a SCAP benchmark files from DISA
+# Perform Openscap scan and write results into a file
+oscap xccdf eval --results </path/to/results.xml> --cpe </path/to/cpe-dictionary/file> </path/to/xcddf.xml>
+
+# Generate HTML viewable report 
+oscap xccdf generate report --output </path/to/results.html> </path/to/results.xml>

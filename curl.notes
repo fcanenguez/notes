@@ -1,0 +1,5 @@
+# Authentication using base64 encoding
+curl -i -H "Authorization:Basic <token string>" <URL>
+
+# Create base64 encoded string
+echo "<string to encode> | base64

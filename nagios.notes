@@ -1,0 +1,5 @@
+# Nagios exit codes definitions
+   0 = OK
+   1 = Critical
+   2 = Warning
+   3 = Unknown

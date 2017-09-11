@@ -1,0 +1,5 @@
+# Unlock user from AD with one command
+echo "user edit autolock <username> no" | net rpc shell -U <admin_username> -S <domain_controller>
+
+# Interactive shell
+net rpc shell -U <admin_username> -S <domain_controller>
