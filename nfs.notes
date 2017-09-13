@@ -1,0 +1,6 @@
+RPC = Remote Procedure Calls, uses portmap underneath
+rpc.mountd = receives mount requests and checks against the exported filesystem.
+rpc.nfsd = user level parts of NFS. Provides additional threads for the NFS client to use.
+rpc.statd = Implements the Network Status Monitor (NSM) RPC protocol. Reboot notification when NFS server is restarted without gracefull shutdown.
+
+
