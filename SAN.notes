@@ -1,0 +1,19 @@
+# Create an alias
+alicreate "<host_last_wwn>", "<host_wwn>"
+
+# Create a zone
+zonecreate "<Z_<host>_<diskarray>>", "<host_alias>;<diskarray_alias>"
+
+# Get config of a zone
+zoneshow <zone_name>
+
+# Adding zone to a configuration
+cfgadd <config_name>, <zone_name>
+
+# Get list of SAN configurations
+cfgshow *
+
+# Commit changes to SAN
+cfgenable <config_name>
+
+
