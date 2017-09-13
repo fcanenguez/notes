@@ -1,0 +1,5 @@
+RAID0 = Blocks are striped
+RAID1 = Blocks are mirrored
+RAID5 = Blocks are striped w/ parity
+RAID6 = Blocks are striped w/ dual parity
+RAID10 = Blocks are striped and mirrored

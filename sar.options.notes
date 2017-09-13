@@ -1,0 +1,12 @@
+# Common options for SAR to monitor performance.
+
+-b = I/O transfer rate statistics
+-d = Block device activity
+-j = Use with -d option to specify persistent name. -d -j ID to show device name
+-m = Power management statistics (CPU freqency)
+-n = Network statistics. Use with keywords DEV EDEV NFS NFSD SOCK IP EIP ICMP EICMP TCP ETCP UDP SOCK6 IP6 EIP6 ICMP6 EICMP6 UDP6
+-P = Report per-processor. Use ALL keyword to show all processors
+-q = Queue length and load averages
+-r = Memory statistics
+-S = Swap space utilization statistics
+
