@@ -1,0 +1,64 @@
+# 1xx Informational 
+100 = Continue
+101 = Switching Protocols
+102 = Processing (WebDAV)
+
+# 2xx Success
+200 = OK
+201 = Created
+202 = Accepted
+203 = Non-authoritative informartion
+204 = No content
+205 = Reset content
+206 = Partial content
+207 = Multi-status (WebDAV)
+208 = Already reported (WebDAV)
+
+# 3xx Redirection
+300 = Multiple-choices
+301 = Moved permanently 
+302 = Found
+303 = See other
+304 = Not modified
+305 = Use proxy
+306 = Unused
+307 = Temporary redirect
+308 = Permanent redirect
+
+# 4xx Client Error (still more to add, long list)
+400 = Bad request
+401 = Unauthorized
+402 = Payment required
+403 = Forbidden
+404 = Not found
+405 = Method not allowed
+406 = Not acceptable
+407 = Proxy authentication required
+408 = Request timeout
+409 = Conflict
+410 = Gone
+411 = Length required
+412 = Precondition failed
+413 = Request entity too large
+414 = Request URI too long
+415 = Unsupported media type
+416 = Request not satisfiable
+417 = Expectation failed
+418 = I am a teapot (RFC 2324)
+
+# 5xx Server Error
+500 = Internal server error
+501 = Not implemented
+502 = Bad Gateway
+503 = Service unavailable
+504 = Gateway timeout
+505 = HTTP version not supported
+506 = Variant Also Negotiates
+507 = Insufficient storage (WebDAV)
+508 = Loop Detected (WebDAV)
+509 = Bandwidth limit exceeded (Apache)
+510 = Not extended
+511 = Network authentication required
+598 = Network read timeout error
+599 = Network connect timeout error
+
