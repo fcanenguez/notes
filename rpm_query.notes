@@ -1,0 +1,11 @@
+# RPM Verify Output: When a file fails, the format output provides which it failed
+
+S = file size
+M = file mode
+5 = MD5 checksum of file
+D = file major and minor numbers
+L = file's symbolic link contents
+U = owner of the file
+G = file's group
+T = modification time of the file
+c = only appears if a configuration file
