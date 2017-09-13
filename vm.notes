@@ -1,0 +1,8 @@
+# Create storage pool on a directory 
+virsh pool-create-as --name <pool_name> --type dir --target /path/to/directory
+
+# Create VM from command line
+virt-install --connect qemu:///system -n <vm_name> -r <ram_size> --arch=x86_64 --vcpus=<#_of CPUs> [--cpuset=<cores_to_use>] -w network=<network_name>,model=virtio --virt-type=kvm --cdrom=<path_to_ISO> --disk pool=<pool_name>,bus=virtio,size=<disk_size>,format=<raw|qcow2> --graphics spice --video qxl --channel spicevmc
+
+# Virt-viewer to console access to VM
+virt-viewer --connect qemu+ssh://root@<hostname>/system <uuid|vm_name>

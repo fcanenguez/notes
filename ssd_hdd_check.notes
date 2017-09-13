@@ -1,0 +1,6 @@
+# Location in linux kernel to determine if block device is an SSD or HDD
+
+cat /sys/block/<drive>/queue/rotational
+
+0 = SSD
+1 = HDD

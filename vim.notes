@@ -1,0 +1,8 @@
+# Substitue from VIM itself
+:5,140s/<string>/<new_string>/g   <= Range from line 5-140
+
+# Global string substitution
+:g/<string>/s//<new_string>/
+
+# Create the "degree" symbol
+CTRL + SHIFT + u + 00b0 <ENTER>

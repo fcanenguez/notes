@@ -1,0 +1,4 @@
+# Server must be configured to accept SNMPv3 requests with hast algo, authentication and privacy settings
+
+# Command to do SNMPv3 walk
+snmpwalk -v3 -u <user> -a <MD5|SHA> -A <authPassword> -l <noAuthPriv|authNoPriv> -x <DES|AES> -X <privPassword> <hostname> [MIB]
