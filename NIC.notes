@@ -1,0 +1,5 @@
+# Find NIC speed of interface
+cat /sys/class/net/<IFACE>/speed
+
+# Change the speed of a network interface 
+ethtool -s <dev> speed <speed> duplex full autoneg off
