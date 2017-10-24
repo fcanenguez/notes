@@ -1,0 +1,32 @@
+# Bonding Modes definitions
+
+mode 1 = active-backup
+mode 2 = balance-xor
+mode 3 = broadcast
+mode 4 = dynamic link aggregation
+mode 5 = balance-tlb (adaptive transmit load balancing)
+mode 6 = balance-alb (adaptive load balancing)
+
+# Creating the ifcfg file for bonding
+
+ifcfg-bond0:
+
+DEVICE=bond0
+IPADDR=<IP Address>
+NETMASK<Netmask>
+NETWORK=<Network>
+BROADCAST=<Broadcast>
+GATEWAY=<Gateway>
+ONBOOT=yes
+BOOTPROTO=none
+
+# Add slave NIC to bond0
+ifcfg-eth0:
+
+DEVICE=eth0
+ONBOOT=yes
+BOOTPROTO=none
+MASTER=bond0
+SLAVE=yes
+
+# Repeat as needed for other NIC devices
