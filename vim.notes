@@ -6,3 +6,6 @@
 
 # Create the "degree" symbol
 CTRL + SHIFT + u + 00b0 <ENTER>
+
+# Insert text from other file at cursor
+:r /path/to/file
