@@ -1,0 +1,11 @@
+# Make a CA using SSH for CA authentication
+
+ssh-keygen -C CA -f ca
+
+# -C = Comment for keys
+# -f = file name for keys
+
+# Sign a user's public key with CA private key to allow certificate authentication
+ssh-keygen -s <path/to/CA/private/key> -I <ID_NAME> -Z <username> -z <serial#> /path/to/user/public/key
+
+# This will create a *-cert.pub file which needs to be sent back to the original user
