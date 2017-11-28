@@ -1,0 +1,2 @@
+# Initialize multipath.conf file
+mpathconf --enable --with_multipathd y --user_friendly_names y
