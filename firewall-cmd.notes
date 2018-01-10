@@ -1,0 +1,11 @@
+# Add a port to Firewalld via command line
+firewall-cmd --permanent --zone=<zone name> --add-port=<port number/tcp or udp>
+# Reload firewalld
+firewall-cmd --reload
+# List all firewall zones
+firewall-cmd --list-all-zones
+
+### NFS ###
+firewall-cmd --permanent --zone=public --add-service mountd
+firewall-cmd --permanent --zone=public --add-service rpc-bind
+firewall-cmd --permanent --zone=public --add-service nfs
