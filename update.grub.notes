@@ -1,0 +1,3 @@
+# Command to update GRUB
+
+grub-mkconfig -o /boot/grub/grub.cfg
