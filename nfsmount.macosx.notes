@@ -1,0 +1,1 @@
+mount -t nfs -o resvport,rw <server:/path/to/export> </path/to/mount>
