@@ -1,0 +1,6 @@
+# Get track IDs from video file
+mplayer -vo null -ao null -frames 0 -v </path/to/file> | grep aid
+mkvmerge -i <path/to/file>
+
+# Create new video file with selected track
+mkvmerge -o </path/to/new/file> -a <track number> </path/to/orig/video>
