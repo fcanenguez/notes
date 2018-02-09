@@ -1,0 +1,3 @@
+# Check newer Linux kernels for Meltdown/Spectre vulnerability
+
+   grep . /sys/devices/system/cpu/vulnerabilities/*
