@@ -9,3 +9,6 @@ CTRL + SHIFT + u + 00b0 <ENTER>
 
 # Insert text from other file at cursor
 :r /path/to/file
+
+# Delete line with pattern match
+:g/<pattern>/d
