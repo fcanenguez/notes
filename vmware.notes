@@ -1,0 +1,28 @@
+# VMWare CLI Reference
+# Scan for all available storage connected to ESXi host
+
+   esxcli-volume -l
+
+# To persistent mount storage
+
+   esxcli-volume -M <datastore-uuid>
+
+# List all VMs
+
+   vim-cmd vmsvc/getallvms
+
+# To find a particular VM
+
+   vim-cmd vmsvc/getallvms | grep <vm-name>
+
+# Get power state of VM
+ 
+   vim-cmd vmsvc/power.getstate <vm-ID#>
+
+# Power on VM
+
+   vim-cmd vmsvc/power.on <vm-ID#>
+   
+# Power off VM
+
+   vim-cmd vmsvc/power.off <vm-ID#>
