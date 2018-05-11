@@ -12,3 +12,7 @@ CTRL + SHIFT + u + 00b0 <ENTER>
 
 # Delete line with pattern match
 :g/<pattern>/d
+
+# Delete line before or after pattern match
+:g/<pattern/+1d   # after
+:g/<pattern/-1d   # before
