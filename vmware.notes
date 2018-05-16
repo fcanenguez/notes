@@ -23,9 +23,13 @@
 
    vim-cmd vmsvc/power.on <vm-ID#>
    
-# Power off VM
+# Power off VM (pull the plug)
 
    vim-cmd vmsvc/power.off <vm-ID#>
+
+# Shutdown VM (gracefully)
+
+   vim-cmd vmsvc/power.shutdown <vm-ID#>
 
 # Directory for SSH authorized keys
 
