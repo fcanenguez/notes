@@ -26,3 +26,7 @@
 # Power off VM
 
    vim-cmd vmsvc/power.off <vm-ID#>
+
+# Directory for SSH authorized keys
+
+   /etc/ssh/keys-root
