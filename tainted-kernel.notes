@@ -1,0 +1,19 @@
+# Codes for tainted kernel messages
+
+G = GPL modules loaded
+P = Proprietary modules loaded
+F = Module loaded forcefully
+S = Oops on SMP kernels
+R = Module was forcefully removed
+M = Processor reported Machine Check Exception (MCE)
+B = Page-release function has found a bad page reference
+U = User or application has requested that tainted flag be set
+D = Kernel has died (OOPS or BUG)
+A = ACPI table has been overwritten
+W = Warning has been previously issued by kernel
+C = Staging driver has been loaded
+I = Kernel is working around a severe bug on platform (BIOS or similar)
+O = Externally built (out-of-tree) module loaded
+E = Unsigned module has been loaded in a kernel supporting signed modules
+L = Soft lockup has previously occurred
+K = Kernel has been live patched
