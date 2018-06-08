@@ -1,0 +1,38 @@
+# How to do a Git status when not inside Git working directory
+  git --git-dir=~/foo/.git --work-tree=~/foo status
+
+# How to setup Git as a read-only over HTTP for cloning
+# create empty repository
+
+   git init .
+
+# Rename the "post-update.sample" file to "post-update" for Git to refresh itself
+
+   cd <git-repo-dir>/.git/hooks
+   mv post-update.sample post-update
+
+# Configure Git to run update-server-info after each successful commit
+
+   cd <git-repo-dir>/.git/hooks
+   mv post-commit.sample post-commit
+
+# Edit the post-commit file and add the following line:
+
+   exec git update-server-info
+
+# Create an Apache configuration file that points to the Git repository (<git-repo>/.git) 
+# Sample Apache configure file
+
+Alias "/git/gitrepo" "/<path/to/git/repo>"
+<Directory "</path/to/git/repo/.git>"
+   AllowOverride none
+   Order allow,deny
+   Allow from all
+</Directory>
+
+# Restart Apache
+
+# Run Git update-server-info inside of working repository
+
+   git update-server-info
+ 
