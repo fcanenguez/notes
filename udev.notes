@@ -1,0 +1,3 @@
+# rescan udev for hardware changes
+ 
+   udevadm trigger
