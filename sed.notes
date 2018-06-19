@@ -15,3 +15,6 @@ sed -e "/<pattern>/s/<old_string>/<new_string>/" /path/to/file
 
 # Match pattern inside parenthesis
 sed "s/.*(\(.*\))/\1/" /path/to/file
+
+# Delete empty line
+sed "/^$/d"
